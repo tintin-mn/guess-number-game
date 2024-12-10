@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*for hide arrows in number input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    color: #F6FCDF;
+    font-family: 'press start 2P', sans-serif;
+    background-color: #859F3D;
+    min-height: 100vh;
+    font-size: 2rem;
+}
+
+.container {
+    width: 100vw;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    height: 18rem;
+    border-bottom: 0.7rem solid #F6FCDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .optional {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-title {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 6rem;
+        color: #31511E;
+    }
+
+    .again-btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .divider {
+        font-size: 3.5rem;
+        color: #31511E;
+        background-color: #F6FCDF;
+        padding: 2rem 0;
+        width: 8rem;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+
+    .core-section {
+        display: flex;
+        align-items: center;
+        gap: 32rem;
+
+        padding-top: 2rem;
+
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.btn {
+    background-color: #31511E;
+    color: #F6FCDF;
+    border: none;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: rgba(49, 81, 30, 0.87);
+}
+
+.guess-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    label {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .input {
+        background: none;
+        border: 0.4rem solid #F6FCDF;
+        font-family: inherit;
+        color: inherit;
+        font-size: 4rem;
+        padding: 2rem 1rem;
+        width: 20rem;
+        height: 8rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        outline: none;
+    }
+
+    .guess-btn {
+        width: 20rem;
+    }
+}
