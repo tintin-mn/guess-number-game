@@ -94,6 +94,12 @@ main {
             display: flex;
             align-items: center;
         }
+       .winText {
+            color: chartreuse;
+        }
+      .lose-text {
+            color: crimson;
+        }
     }
 
     .right-section {
@@ -114,6 +120,7 @@ main {
         pointer-events: none;
         transition: opacity 0.3s ease;
         z-index: 1000;
+        font-family: sans-serif;
     }
     .toast.show {
         opacity: 1;
@@ -163,4 +170,25 @@ main {
     .guess-btn {
         width: 16rem;
     }
+    .guess-btn.disabled {
+        color: darkgray;
+        background: #333333;
+        cursor: default;
+    }
+}
+
+.lose-text {
+    color: crimson;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    padding: 12px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+    font-family: sans-serif;
 }

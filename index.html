@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <header class="header optional">
-        <button class="btn again-btn" onclick="playAgain()">Again</button>
+        <button class="btn again-btn">Again</button>
 
         <h1 class="header-title">guess My Number!</h1>
         <div class="divider">?</div>
@@ -26,7 +26,7 @@
                     <label>
                         <input class="input" type="number">
                     </label>
-                    <button onclick="guessProcess()" class="guess-btn btn">Guess</button>
+                    <button type="button" onclick="guessProcess()" class="guess-btn btn">Guess</button>
                 </form>
             </section>
             <section class="right-section">
@@ -35,7 +35,7 @@
                 <div class="lives">❤️❤️❤️❤️❤️</div>
             </section>
         </section>
-        <div class="toast" id="toast"></div>
+        <div class="toast"></div>
     </main>
 </div>
 
